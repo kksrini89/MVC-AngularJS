@@ -1,0 +1,19 @@
+﻿<div class="row">
+    <table class="table table-condensed table-hover">
+        <tr>
+            <th>Number</th>
+            <th>Name</th>
+            <th>City</th>
+        </tr>
+        <tr ng-repeat="customer in customerData">
+            <td>{{customer.number}}</td>
+            <td>{{customer.name}}</td>
+            <td>{{customer.city}}</td>
+        </tr>
+    </table> &nbsp;
+    <hr />
+    <div kendo-grid
+         k-options="gridOptions"
+         k-selectable="true">
+    </div>
+</div>
